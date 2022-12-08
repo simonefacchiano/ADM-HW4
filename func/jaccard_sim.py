@@ -1,3 +1,7 @@
+import subprocess
+import sys
+import pandas as pd
+
 def ele(bucket_ele,data):
     return data.index.get_loc(bucket_ele)
 def Jsim(bucket,data):
@@ -15,4 +19,5 @@ def Jsim(bucket,data):
             result.append(x)
     
     df1 = pd.DataFrame(result)
-    print(df1)
+    return df1
+
